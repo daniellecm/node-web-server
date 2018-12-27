@@ -15,10 +15,11 @@ app.use((req,res,next) => {
     fs.appendFile('server.log', log + '\n', (err) => { })
     next()
 })
-
+/*
 app.use((req,res,next) => {
     res.render('maint.hbs')
 })
+*/
 
 app.use(express.static(__dirname + '/public'))
 
